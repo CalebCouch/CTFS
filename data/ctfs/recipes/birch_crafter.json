@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ppp",
+        "ppp",
+        "ppp"
+    ],
+    "key": {
+        "p": {
+            "item": "minecraft:birch_planks"
+        }
+    },
+    "result": {
+        "item": "minecraft:barrier",
+        "count": 1
+    },
+    "group": "crafter"
+}

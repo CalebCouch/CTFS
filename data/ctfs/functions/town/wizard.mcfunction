@@ -1,0 +1,3 @@
+execute as @e[tag=Game] at @s positioned ~-15 ~1 ~-15 unless entity @e[tag=Wizard,distance=..1] run summon villager ~ ~ ~ {CustomNameVisible:1b,CustomName:"\"Wizard\"",VillagerData:{profession:librarian,level:10,type:plains},Invulnerable:1,PersistenceRequired:1,Silent:1,NoAI:1,Tags:["Center","Wizard","init"],Offers:{Recipes:[{buy:{id:sunflower,Count:1,tag:{BronzeCoin:1b,display:{Name:"\"Bronze Coin\"",Lore:["\"Worth 100,000\""]}}},buyB:{id:sunflower,Count:1,tag:{TinCoin:1b,display:{Name:"\"Tin Coin\"",Lore:["\"Worth 10,000\""]}}},sell:{id:experience_bottle,Count:1},rewardExp:0b,maxUses:9999999}]}}
+execute as @e[tag=Wizard,tag=!Center,tag=init] at @s run tp @s ~ ~ ~ ~90 0
+execute as @e[tag=Wizard,tag=!Center,tag=init] run tag @s remove init
